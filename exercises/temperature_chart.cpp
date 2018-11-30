@@ -3,12 +3,9 @@
  temperature difference between entries in the table. */
 
 #include <iostream>
-#include <cmath>
-#include <iomanip>
+#include <iomanip> 
+#include "conversions.h"
 using namespace std;
-
-double to_celcius(int temp);
-double to_absolute_value(int temp);
 
 void print_description_message();
 void user_input(int& minimum, int& maximum, int& step);
@@ -87,17 +84,3 @@ void print_table(int minimum, int maximum, int step)
 		cout << to_absolute_value(temp) << "\n";
 	}
 }
-
-
-/* Function to convert Fahrenheit to Celcius */
-double to_celcius(int temp) 
-{
-	return (temp-32)*5.0/9.0;
-}
-
-/* Function to convert Fahrenheit to absolute value */
-double to_absolute_value(int temp) 
-{
-	return to_celcius(temp)+273.15;
-}
-
