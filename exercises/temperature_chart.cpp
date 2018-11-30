@@ -7,6 +7,10 @@
 
 using namespace std;
 
+double to_celcius(int temp);
+double to_absolute_value(int temp);
+
+/* Main Program */
 int main() {
 	int fahr_minimum = 0;
 	int fahr_maximum = 0;
@@ -42,9 +46,8 @@ int main() {
 	cout.precision(2);
 
 	// Print table
-	for(temp = fahr_minimum ; temp < fahr_maximum+1 ; temp += step) {
-		celcius = (temp-32)*5.0/9.0;
-		
+	for(temp = fahr_minimum ; temp <= fahr_maximum; temp += step) {
+		celcius = to_celcius(temp);
 		cout.width(20);
 		cout << temp;
 		cout.width(20);
@@ -53,4 +56,16 @@ int main() {
 		cout << celcius + 273.15 << "\n";
 	}
 	return 0;
+}
+
+/* End of Program */
+
+/* Function to convert Fahrenheit to Celcius */
+double to_celcius(int temp) {
+	return (temp-32)*5.0/9.0;
+}
+
+/* Function to convert Fahrenheit to absolute value */
+double to_absolute_value(int temp) {
+	return to_celcius(temp)+273.15;
 }
