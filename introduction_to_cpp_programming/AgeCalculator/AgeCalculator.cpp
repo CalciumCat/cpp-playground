@@ -1,19 +1,8 @@
-//	The C++ compiler ignores comments which start with 
-	// double slashes like this, up to the end of the line.  
+	/* Program addapted based exercises from the course */
 	 
-	/* Comments can also be written starting with a slash 
-	 followed by a star, and ending with a star followed by
-	 a slash. As you can see, comments written in this way 
-	 can span more than one line. */ 
-	
-	/* Programs should ALWAYS include plenty of comments! */ 
-	
-	/* Author: Rob Miller and William Knottenbelt 
-	 Program last changed: 30th September 2001 */ 
-	 
-	/* This program prompts the user for the current year, the user's 
-	current age, and another year. It then calculates the age 
-	that the user was or will be in the second year entered. */ 
+	/* This program prompts the user for the current month/year, the user's 
+	current ages, their month of birth and another year/month. It then calculates the age 
+	that the user was or will be in the second month/year entered. */ 
 	 
 	#include <iostream> 
 	
