@@ -8,7 +8,7 @@ using namespace std;
 
 
 /* Function to convert Fahrenheit to Celcius */
-double to_celcius(int temp) 
+double to_celcius(int temp)
 {
 	return (temp-32)*5.0/9.0;
 }
